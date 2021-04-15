@@ -3,9 +3,10 @@
 `brew install git`
 
 To use my configuration, insert your information into the config file and
-symlink the file to `~/.gitconfig`.
+symlink the file to `~/.gitconfig` (replace the `...` with the directory where
+`dotfiles` is located):
 ```
-ln -nfs ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -nfs ~/.../dotfiles/git/gitconfig ~/.gitconfig
 ```
 
 Take a look at the `gitconfig` file to see which commands you can use. Some are
