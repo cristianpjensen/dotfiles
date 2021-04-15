@@ -14,4 +14,6 @@ ln -fs ~/dotfiles/init.vim  ~/.config/nvim/init.vim
 ln -fs ~/dotfiles/config ~/.config/nvim/config
 ```
 
-After installation, use neovim with `nvim`
+Afterward, install the plugins with `nvim +PlugInstall +qall`.
+
+After installation, use neovim with `nvim`.
