@@ -1,0 +1,15 @@
+" add the ~/.dotfiles/neovim folder to the runtimepath
+let &runtimepath.=','.escape(expand('$VIMPATH'), '\,')
+
+" initialize plugins
+call plug#begin('~/.config/nvim/plugged')
+source ~/.config/nvim/config/plugins.vim
+call plug#end()
+
+filetype plugin indent on
+syntax enable
+
+source ~/.config/nvim/config/general.vim
+source ~/.config/nvim/config/mappings.vim
+source ~/.config/nvim/config/plugin-mappings.vim
+source ~/.config/nvim/config/theme.vim
