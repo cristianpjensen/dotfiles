@@ -10,8 +10,8 @@ sh -c 'curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 
 To use my configuration, symlink the config files to `~/.config/nvim/`:
 ```
-ln -fs ~/dotfiles/init.vim  ~/.config/nvim/init.vim
-ln -fs ~/dotfiles/config ~/.config/nvim/config
+ln -nfs ~/dotfiles/neovim/init.vim  ~/.config/nvim/init.vim
+ln -nfs ~/dotfiles/neovim/config ~/.config/nvim/config
 ```
 
 Afterward, install the plugins with `nvim +PlugInstall +qall`.
