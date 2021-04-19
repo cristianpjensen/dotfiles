@@ -21,6 +21,7 @@ main() {
     yapf
     flake8
     notebook
+    neovim
   )
   for module in $modules; do
     pip3 install $module
