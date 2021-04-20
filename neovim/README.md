@@ -24,3 +24,8 @@ To make use of
 files, you have to run `inkscape-figures watch` before editing files. This can
 be used by first typing the name of a figure and then pressing
 <kbd>Ctrl+F</kbd>.
+
+If you are running linux, you can also utilise
+[inkscape-shortcut-manager](https://github.com/gillescastel/inkscape-shortcut-manager),
+which provides a lot of shortcuts and vim integration for text editing. This
+makes it a lot faster to make figures. It only works for linux.
