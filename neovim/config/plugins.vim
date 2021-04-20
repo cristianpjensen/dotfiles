@@ -6,7 +6,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'machakann/vim-highlightedyank'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " themes
 Plug 'dracula/vim', { 'name': 'dracula' }
@@ -15,7 +15,6 @@ Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 " navigation
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'rhysd/clever-f.vim'
-Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-sensible'
 
 " code manipulation

@@ -110,10 +110,7 @@ endsnippet
 
 snippet mk "Math" wA
 $${1}$`!p
-if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
-	snip.rv = ' '
-else:
-	snip.rv = ''
+snip.rv = ''
 `$2
 endsnippet
 
@@ -628,6 +625,10 @@ priority 100
 context "math()"
 snippet "([a-zA-Z])hat" "hat" riA
 \hat{`!p snip.rv=match.group(1)`}
+endsnippet
+
+snippet "(\\?\w+)(,\.|\.,)" "Vector postfix" riA
+\vec{`!p snip.rv=match.group(1)`}
 endsnippet
 
 snippet letw "let omega" iA

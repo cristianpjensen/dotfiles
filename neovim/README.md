@@ -18,3 +18,9 @@ ln -nfs ~/.../dotfiles/neovim/config ~/.config/nvim
 Afterward, install the plugins with `nvim +PlugInstall +qall`.
 
 After installation, use neovim with `nvim`.
+
+To make use of
+[inkscape-figures](https://github.com/gillescastel/inkscape-figures) for tex
+files, you have to run `inkscape-figures watch` before editing files. This can
+be used by first typing the name of a figure and then pressing
+<kbd>Ctrl+F</kbd>.

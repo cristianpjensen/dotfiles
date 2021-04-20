@@ -22,6 +22,10 @@ main() {
     flake8
     notebook
     neovim
+
+    # may need to use `sudo -H pip3 install inkscape-figures`
+    # https://github.com/gillescastel/inkscape-figures/issues/28
+    inkscape-figures
   )
   for module in $modules; do
     pip3 install $module
