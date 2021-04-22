@@ -3,11 +3,14 @@ cask_args appdir: "/Applications"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "jason0x43/neovim-nightly"
 tap "teamookla/speedtest"
+tap "zegervdv/zathura"
 
 # packages
 brew "ack"
 brew "bat"
+brew "choose-gui"
 brew "curl"
 brew "fzf"
 brew "gcc"
@@ -22,10 +25,13 @@ brew "vim"
 brew "wget"
 brew "zsh"
 brew "teamookla/speedtest/speedtest"
+brew "zegervdv/zathura/zathura", args: ["with-synctex"]
+brew "zegervdv/zathura/zathura-pdf-poppler"
 
 # casks
 cask "discord"
 cask "google-chrome"
+cask "inkscape"
 cask "iterm2"
 cask "mactex"
 cask "moom"
