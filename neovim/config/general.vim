@@ -19,8 +19,17 @@ set showbreak=↪
 set textwidth=80
 
 " spellcheck
-setlocal spell
+augroup mdtexSpell
+  autocmd!
+  autocmd FileType markdown setlocal spell
+  autocmd FileType tex setlocal spell
+  autocmd BufRead,BufNewFile *.md setlocal spell
+  autocmd BufRead,BufNewFile *.tex setlocal spell
+augroup END
+
 set spelllang=nl,en_gb
+
+" correct spelling with Ctrl+l
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 filetype off
