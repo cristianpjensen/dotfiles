@@ -23,6 +23,9 @@ nnoremap U :redo<CR>
 vnoremap > >gv|
 vnoremap < <gv
 
+" use <leader>/ to remove search highlights
+nmap <silent> <leader>/ :nohlsearch<CR>
+
 " perform macros on multiple lines
 xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
 
