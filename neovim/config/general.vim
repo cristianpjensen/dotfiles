@@ -1,11 +1,13 @@
-set shell=/bin/zsh
+" line numbering
 set nonumber! norelativenumber!
 set cursorline!
 
-set ttyfast
-set list listchars=tab:»\ ,trail:·
+" search
+set incsearch
+set ignorecase
+set smartcase
 
-" indenting
+" indentation
 set expandtab
 set smarttab
 set tabstop=2
@@ -31,6 +33,15 @@ set spelllang=nl,en_gb
 
 " correct spelling with Ctrl+l
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
+" other
+set shell=/bin/zsh
+set list listchars=tab:»\ ,trail:·
+set autowrite
+set title
+set titlestring=%t
+set confirm
+set history=5
 
 filetype off
 au BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.typescriptreact

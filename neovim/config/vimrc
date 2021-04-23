@@ -4,7 +4,6 @@ source ~/.config/nvim/config/plugins.vim
 call plug#end()
 
 filetype plugin indent on
-syntax enable
 
 source ~/.config/nvim/config/general.vim
 source ~/.config/nvim/config/mappings.vim
