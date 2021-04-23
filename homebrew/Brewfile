@@ -6,6 +6,7 @@ tap "homebrew/core"
 tap "jason0x43/neovim-nightly"
 tap "teamookla/speedtest"
 tap "zegervdv/zathura"
+tap "homebrew/cask-fonts"
 
 # packages
 brew "ack"
@@ -27,6 +28,7 @@ brew "zsh"
 brew "teamookla/speedtest/speedtest"
 brew "zegervdv/zathura/zathura", args: ["with-synctex"]
 brew "zegervdv/zathura/zathura-pdf-poppler"
+brew "mas"
 
 # casks
 cask "discord"
@@ -34,7 +36,14 @@ cask "google-chrome"
 cask "inkscape"
 cask "iterm2"
 cask "mactex"
-cask "moom"
 cask "slack"
 cask "smoothscroll"
 cask "spotify"
+cask "font-jetbrains-mono"
+
+" mac store apps
+mas "Microsoft OneNote", id: 784801555
+mas "Whatsapp", id: 1147396723
+mas "Dropover", id: 1355679052
+mas "Moom", id: 419330170
+mas "WiFi Explorer Lite", id: 1408727408
