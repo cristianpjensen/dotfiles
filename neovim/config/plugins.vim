@@ -29,12 +29,14 @@ Plug 'tpope/vim-sleuth'
 " syntax highlighting
 " the vim-polyglot plugin was very slow on startup (~60ms), but if you need
 " syntax highlighting for another filetype, look at the list in their readme
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'tpope/vim-git'
 Plug 'MTDL9/vim-log-highlighting'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-python/python-syntax'
 Plug 'zinit-zsh/zinit-vim-syntax'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'leafgarland/typescript-vim'
+Plug 'pangloss/vim-javascript'
 
 " latex
 Plug 'lervag/vimtex'

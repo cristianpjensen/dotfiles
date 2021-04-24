@@ -42,6 +42,8 @@ set title
 set titlestring=%t
 set confirm
 set history=5
+set ve+=onemore
+set backspace=indent,eol,start
 
 filetype off
-au BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.typescriptreact
+"au BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.typescriptreact
