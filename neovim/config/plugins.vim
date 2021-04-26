@@ -25,6 +25,9 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-endwise'
+Plug 'Townk/vim-autoclose'
+Plug 'Chiel92/vim-autoformat'
 
 " syntax highlighting
 " the vim-polyglot plugin was very slow on startup (~60ms), but if you need
