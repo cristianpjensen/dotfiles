@@ -15,7 +15,7 @@ def main():
 
     backup = False
 
-    if input('Backup your current dotfiles? [y/n]\n') == 'y':
+    if input('Backup your current dotfiles [y/n]? ') == 'y':
         # remove if the dir exists
         if os.path.isdir(HOME + '/dot-backup'):
             shutil.rmtree(HOME + '/dot-backup')
@@ -25,7 +25,7 @@ def main():
 
     ### HOMEBREW
 
-    if input('Install homebrew? [y/n]\n') == 'y':
+    if input('Install homebrew [y/n]? ') == 'y':
         # install homebrew
         if subprocess.run(['brew', 'help']).returncode == 1:
             subprocess.run(
@@ -39,12 +39,12 @@ def main():
         ],
                        cwd=HOME)
 
-        if input('Install git config? [y/n]\n') == 'y':
+        if input('Install git config [y/n]? ') == 'y':
             symlink(DOTDIR + '/git/gitconfig', HOME + '/.gitconfig', backup)
 
     ### ZSH
 
-    if input('Install and use zsh config? [y/n]\n') == 'y':
+    if input('Install and use zsh config [y/n]? ') == 'y':
         if not os.path.isdir(HOME + '/.zinit'):
             os.mkdir(HOME + '/.zinit')
 
@@ -56,7 +56,7 @@ def main():
 
     ### NEOVIM
 
-    if input('Install neovim? [y/n]\n') == 'y':
+    if input('Install neovim [y/n]? ') == 'y':
         # install vim-plug
         subprocess.run([
             'sh', '-c',
@@ -75,7 +75,7 @@ def main():
 
     ### ZATHURA
 
-    if input('Install zathura? [y/n]\n') == 'y':
+    if input('Install zathura [y/n]? ') == 'y':
         symlink(DOTDIR + '/zathura/zathurarc',
                 HOME + '/.config/zathura/zathurarc', backup)
 
