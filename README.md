@@ -3,6 +3,14 @@
 All configurations I use, which can be used to set up on any unix machine. Each
 directory has its dedicated `README.md` that specifies how and what to install.
 
+### Installation
+```
+cd ~
+git clone https://github.com/cristianpjensen/dotfiles.git .dotfiles
+cd .dotfiles
+python3 setup.py
+```
+
 ### Sources
 
 * [MacOS defaults](https://github.com/herrbischoff/awesome-macos-command-line)
