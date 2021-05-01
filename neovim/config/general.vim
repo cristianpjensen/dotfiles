@@ -46,4 +46,6 @@ set ve+=onemore
 set backspace=indent,eol,start
 
 filetype off
-"au BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.typescriptreact
+
+" needed for resizing windows with mouse
+"set mouse=n

@@ -1,9 +1,3 @@
-" disable arrow keys
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-
 " treat long lines as break lines
 nnoremap <silent> j gj
 nnoremap <silent> k gk
@@ -15,6 +9,12 @@ nnoremap <silent> <C-d> <C-d>zz
 nnoremap <silent> <C-u> <C-u>zz
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
+
+" arrow keys to resize splits
+nnoremap <silent> <left>  :3wincmd <<cr>
+nnoremap <silent> <right> :3wincmd ><cr>
+nnoremap <silent> <up>    :3wincmd +<cr>
+nnoremap <silent> <down>  :3wincmd -<cr>
 
 " U redos
 nnoremap <silent> U :redo<CR>
