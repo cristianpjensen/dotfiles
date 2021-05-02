@@ -1,0 +1,119 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #0f111b
+background-alt = #16172d
+foreground = #ecf0c1
+foreground-alt = #30365f
+primary = #5ccc96
+secondary = #f2ce00
+alert = #e33400
+
+[bar/main]
+monitor =
+bottom = false
+width = 100%
+height = 32
+radius = 0.5
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 2
+padding-right = 4
+
+module-margin-left = 0
+module-margin-right = 4
+
+font-0 = "JetBrains Mono:pixelsize=10;3
+font-1 = "JetBrains Mono:pixelsize=18;5
+
+modules-left = bspwm
+modules-center =
+modules-right = alsa date
+
+tray-position = right
+tray-padding = 2
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 2
+
+label-occupied-padding = 2
+
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%d/%m"
+date-alt = "%d/%m"
+
+time = "%H.%M%"
+time-alt = "%H.%M:%S"
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+
+label = %date% %time%
+
+[module/alsa]
+type = internal/alsa
+
+format-volume = <label-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${root.foreground}
+
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = mute
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini

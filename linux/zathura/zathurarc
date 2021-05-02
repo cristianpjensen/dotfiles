@@ -1,0 +1,53 @@
+# Basic Settings
+
+set highlight-transparency .1
+set zoom-center "true"
+set selection-clipboard clipboard
+set render-loading "false"
+
+map <Space> toggle_index
+map K zoom in
+map J zoom out
+map p print
+map w recolor
+
+
+# theme
+
+# Light/Default mode settings:
+set notification-error-bg       "#0f111b"
+set notification-error-fg       "#e33400"
+set notification-warning-bg     "#0f111b"
+set notification-warning-fg     "#e39400"
+set notification-bg             "#0f111b"
+set notification-fg             "#f2ce00"
+
+set completion-bg               "#0f111b"
+set completion-fg               "#ecf0c1"
+
+set index-bg                    "#16172d"
+set index-fg                    "#ecf0c1"
+
+set inputbar-bg                 "#16172d"
+set inputbar-fg                 "#ecf0c1"
+set statusbar-bg                "#16172d"
+set statusbar-fg                "#ecf0c1" 
+
+set highlight-color             "#1b1c36"
+set highlight-active-color      "#fff"
+
+set render-loading              true
+set render-loading-fg           "#11121D"
+set render-loading-bg           "#A0A8CD"
+
+set default-bg                  "#0f111b"
+
+# Recolor mode settings
+set recolor-lightcolor          "#0f111b" # Background
+set recolor-darkcolor           "#ecf0c1" # Foreground
+
+# Startup options
+set adjust-open width
+set statusbar-basename true
+set smooth-scroll true
+set recolor true
