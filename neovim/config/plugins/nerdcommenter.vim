@@ -1,3 +1,2 @@
-" this requires ++ to be mapped to Cmd+/ in iTerm
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
+vmap <C-c> <plug>NERDCommenterToggle
+nmap <C-c> <plug>NERDCommenterToggle
