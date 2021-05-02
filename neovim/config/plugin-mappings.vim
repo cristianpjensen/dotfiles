@@ -12,4 +12,4 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
-au BufWrite * :Autoformat
+"au BufWrite * :Autoformat
