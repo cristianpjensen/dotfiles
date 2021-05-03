@@ -8,14 +8,12 @@ configuration {
 }
 
 * {
-  font: "JetBrains Mono 12";
-  icon-font: "JetBrains Mono Bold 18";
+  font: "IBM Plex Mono 12";
+  icon-font: "IBM Plex Mono Bold 18";
    /*padding: 3px 5px; */
-  background-color: #0f111bee;
-  foreground: #ecf0c1;
-  window-bordercolor: #30365f;
+  background-color: #1c1c1cee;
+  foreground: #b5b4c9;
   color: @foreground;
-  separator-color: @window-bordercolor;
 }
 
 
@@ -73,8 +71,8 @@ element-text {
 
 element selected {
   border-radius: 2px;
-  background-color: #16172d;
-  color: #f2ce00;
+  background-color: #191919;
+  color: #f0f0f0;
 }
 
 /* vim: ft=css

@@ -26,73 +26,44 @@ secondary = #f2ce00
 alert = #e33400
 
 [bar/main]
-monitor =
-bottom = false
-width = 100%
-height = 32
-radius = 0.5
-fixed-center = false
-
+width = 66%
+height = 41
+offset-x = 16%
+offset-y = 25
+fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 2
-padding-right = 4
-
-module-margin-left = 0
-module-margin-right = 4
-
-font-0 = "JetBrains Mono:pixelsize=10;3
-font-1 = "JetBrains Mono:pixelsize=18;5
-
-modules-left = bspwm
-modules-center =
-modules-right = alsa date
-
-tray-position = right
-tray-padding = 2
-
+padding-left = 5
+padding-right = 5
+module-margin-left = 5
+module-margin-right = 5
+font-0 = "IBM Plex Mono:pixelsize=10;2"
+font-1 = "IBM Plex Mono:pixelsize=8;2"
+modules-left = title
+modules-center = bspwm
+modules-right = time
+override-redirect = false
+radius = 10%
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/xwindow]
+[module/title]
 type = internal/xwindow
-label = %title:0:30:...%
+label-maxlen = 150
 
 [module/bspwm]
 type = internal/bspwm
 
-label-focused-background = ${colors.background-alt}
-label-focused-padding = 2
-
-label-occupied-padding = 2
-
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-background = ${colors.urgent}
+label-urgent-padding = 1
 
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
-[module/date]
+[module/time]
 type = internal/date
-interval = 1
-
-date = "%d/%m"
-date-alt = "%d/%m"
-
-time = "%H.%M%"
-time-alt = "%H.%M:%S"
-
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-
-label = %date% %time%
+interval = 25.0
+date = "%H:%M"
 
 [module/alsa]
 type = internal/alsa
@@ -106,11 +77,6 @@ label-muted = mute
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
 
 [global/wm]
 margin-top = 5
