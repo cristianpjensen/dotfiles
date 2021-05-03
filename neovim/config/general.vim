@@ -42,10 +42,9 @@ set title
 set titlestring=%t
 set confirm
 set history=5
-set ve+=onemore
 set backspace=indent,eol,start
 
 filetype off
 
 " needed for resizing windows with mouse
-"set mouse=n
+set mouse=n
