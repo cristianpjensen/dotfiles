@@ -594,8 +594,8 @@ endsnippet
 
 # turn single letter words into math mode (i, I, a, A excluded).
 context "notmath()"
-snippet "(\b[b-hj-zB-HJ-Z]\b) " "Variable in text" riA
-$`!p snip.rv=match.group(1)[0]`$ $0
+snippet "(\b[b-hj-zB-HJ-Z]\b)([., ])" "Variable in text" riA
+$`!p snip.rv=match.group(1)[0]`$`!p snip.rv=match.group(2)`$0
 endsnippet
 
 # vim:ft=snippets
