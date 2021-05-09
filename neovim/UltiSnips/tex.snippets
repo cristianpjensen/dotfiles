@@ -308,6 +308,7 @@ endsnippet
 
 # xnn becomes x_n
 # works for any combination of letters and numbers
+priority 100
 context "math()"
 snippet "\b([a-z])([a-z])\2\b" "Letter variable subscript" riA
 `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)[0]`
@@ -358,6 +359,7 @@ snippet nabl "Nabla" iA
 \nabla 
 endsnippet
 
+priority 10
 context "math()"
 snippet xx "Cross" iA
 \times 
@@ -471,6 +473,7 @@ endsnippet
 #\in 
 #endsnippet
 
+priority 10
 context "math()"
 snippet nn "Intersection" iA
 \cap 
@@ -539,16 +542,16 @@ snippet case "cases" wA
 endsnippet
 
 context "notmath()"
-snippet fun "Function" iA
-$$1: $2 \longmapsto $3$
+snippet fun "Function" i
+$${1:f}: ${2:x} \longmapsto ${3:y}$
 endsnippet
 
 context "math()"
-snippet fun "Function" iA
-$1: $2 \longmapsto $3
+snippet fun "Function" i
+${1:f}: ${2:x} \longmapsto ${3:y}
 endsnippet
 
-snippet bigfun "Big function" iA
+snippet bigfun "Big function" i
 \begin{align*}
 	$1: $2 &\longrightarrow $3 \\\\
 	$4 &\longmapsto $1($4) = $0
