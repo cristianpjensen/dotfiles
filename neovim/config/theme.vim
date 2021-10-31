@@ -8,11 +8,11 @@ endif
 
 set background=dark
 
-" let g:dracula_italic = 0
+ let g:dracula_italic = 0
 
 try
-  colorscheme spaceduck
-  " colorscheme dracula
+  "colorscheme spaceduck
+   colorscheme dracula
 catch
   echo 'colorscheme did not set'
 endtry

@@ -9,6 +9,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " themes
 Plug 'dracula/vim', { 'name': 'dracula' }
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'shaunsingh/nord.nvim'
 
 " navigation
 Plug 'christoomey/vim-tmux-navigator'
@@ -22,7 +23,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-endwise'
@@ -35,11 +36,13 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'tpope/vim-git'
 Plug 'MTDL9/vim-log-highlighting'
 Plug 'plasticboy/vim-markdown'
-Plug 'vim-python/python-syntax'
+Plug 'numirias/semshi'
 Plug 'zinit-zsh/zinit-vim-syntax'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 " latex
 Plug 'lervag/vimtex'

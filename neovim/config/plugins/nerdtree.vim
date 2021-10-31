@@ -1,4 +1,4 @@
-nnoremap <C-t> :NERDTreeToggle<cr>
+nnoremap <C-n> :NERDTreeToggle<cr>
 let NERDTreeMinimalUI=1
 
 " start nerdtree when vim starts
