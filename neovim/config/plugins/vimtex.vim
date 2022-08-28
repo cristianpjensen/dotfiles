@@ -1,6 +1,7 @@
 let g:tex_flavor='latex'
 set conceallevel=1
 let g:tex_conceal='abdmg'
+let g:Tex_MultipleCompileFormats='pdf,bib,pdf'
 
 let g:vimtex_log_ignore = [
         \ 'Underfull',

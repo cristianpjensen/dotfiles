@@ -42,7 +42,9 @@ alias python='python3'
 export TERM="xterm-256color"
 export VISUAL=nvim
 export EDITOR=nvim
-export PATH=$PATH:$HOME/go/bin
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:/bin:${GOPATH}/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

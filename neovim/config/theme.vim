@@ -6,13 +6,18 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+if has('nvim') || has('termguicolors')
+  set termguicolors
+endif
+
 set background=dark
 
  let g:dracula_italic = 0
 
 try
-  "colorscheme spaceduck
-   colorscheme dracula
+  colorscheme spaceduck
+  "colorscheme dracula
+  "colorscheme github_light
 catch
   echo 'colorscheme did not set'
 endtry

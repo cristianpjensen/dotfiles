@@ -9,7 +9,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " themes
 Plug 'dracula/vim', { 'name': 'dracula' }
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-Plug 'shaunsingh/nord.nvim'
+" Plug 'shaunsingh/nord.nvim'
+" Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'projekt0n/github-nvim-theme'
 
 " navigation
 Plug 'christoomey/vim-tmux-navigator'
